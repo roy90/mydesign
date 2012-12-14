@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cusname: MyString
+  cusemail: MyString
+  cusadd: MyString
+  cuspostcode: MyString
+  cuscity: MyString
+  cusphone: MyString
+  cusdate: MyString
+
+two:
+  cusname: MyString
+  cusemail: MyString
+  cusadd: MyString
+  cuspostcode: MyString
+  cuscity: MyString
+  cusphone: MyString
+  cusdate: MyString

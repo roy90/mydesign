@@ -1,0 +1,45 @@
+<h1>List of Customers</h1>
+<br>
+<table align="left" border="0">
+<tr>
+<th bgcolor="#FFDE00"><b>ADMIN : <%=session[:admin_adname]%>  </b></th>
+</tr></table>
+
+</br></br>
+	<table border="1">
+		<tr>
+			<th>Bil</th>
+			<th>No KP</th>
+			<th>Nama Pelanggan</th>
+			<th>Email</th>
+			<th>Alamat</th>
+			<th>Poskod</th>
+			<th>Bandar</th>
+			<th>Negeri</th>
+			<th>Telephone</th>
+			<th>Tarikh Order</th>
+		</tr>
+		<% bil = 0%>
+		<% @show.each do |rum| %>
+			
+			<tr>
+				<td><%=bil+=1%></td>
+				<td><%=rum.nokp%></td>
+				<td><%=rum.cusname%></td>
+				<td><%=rum.cusemail%></td>
+				<td><%=rum.cusadd%></td>
+				<td><%=rum.cuspostcode%></td>
+				<td><%=rum.cuscity%></td>
+				<td><%=rum.cusstate%></td>
+				<td><%=rum.cusphone%></td>
+				<td><%=rum.cusdate%></td>
+		
+				
+				
+				
+		</tr>	
+			<% end %>	
+		</table>
+<br>		
+<a href="tambah_pelanggan"><input type="submit" value="Add New Record"></a>		
+			

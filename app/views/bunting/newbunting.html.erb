@@ -1,0 +1,111 @@
+<h1>STEP 2 : Bunting</h1>
+
+<%= @msg%>
+
+
+
+<form method="POST" enctype="multipart/form-data">
+
+<center>
+	
+	
+	
+<table>
+		<tr>
+			<th>NO.</th>
+			<th>BUNTING SIZE</th>
+			<th>BUNTING PRICE PER FEET</th>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td>More than 20 feets ( > 20f )</td>
+			<td align="center">RM1.00</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>Less than 20 feets ( < 20f )</td>
+			<td align="center">RM1.50</td>
+		</tr>
+	</table>
+	
+	<hr>
+
+
+	<table>
+		
+		<tr>
+			<td>Name</td><td><input type=text name="cusname2"></td>
+		</tr>
+		<tr>
+			<td>IC Number</td><td><input type=text name="nokp2" placeholder="e.g : 910236-01-5476"></td>
+		</tr>
+		<tr>
+			<td>Company Name</td><td><input type=text name="company_name2" placeholder="if have"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input type=text name="cusemail2"></td>
+		</tr>
+	   <tr>
+			<td>Address</td><td><input type=text name="cusadd2"></td>
+		</tr>
+		
+		<tr>
+			<td>Poscode</td><td><input type=text name="cuspostcode2"></td>
+		</tr>
+		
+		
+		<tr>
+			<td>State</td><td>
+			<select type=text name="cusstate2">
+			<option>Kedah</option>
+			<option>Perlis</option>
+			<option>Pulau Pinang</option>
+			<option>Perak</option>
+			<option>Kelantan</option>
+			<option>Terengganu</option>
+			<option>Selangor</option>
+			<option>Kuala Lumpur</option>
+			<option>Pahang</option>
+			<option>Negeri Sembilan</option>
+			<option>Melaka</option>
+			<option>Johor</option>
+			<option>Sabah</option>
+			<option>Sarawak</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>City</td><td><input type=text name="cuscity2"></td>
+		</tr>
+			<tr>
+			<td>Phone No.</td><td><input type=text name="cusphone2"></td>
+		</tr>
+		<tr>
+			<td>Order Date</td><td><input type=text name="cusdate2" placeholder="e.g : 02/06/2012"></td>
+		</tr>
+		
+		<tr>
+			<td>Size</td><td>
+			<select type=text name="buntingsize">
+			<option>-</option>
+			<option>'2 X 5'</option>
+			<option>'3 X 5'</option>
+			<input type=text name="other" placeholder="If other">
+			</td>
+		</tr>
+		<tr>
+			<td>Quantity</td><td><input type=text name="buntingquantity"></td>
+		</tr>
+		<tr>
+			<td>Upload File</td><td>    
+    <input accept="" type="file" name="upload"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="SUBMIT"  onClick="return confirm ('Make sure your information is correct and click OK if confirm  to submit.')">
+			<a href="/neworder"><input type="button" value="BACK"></a></td>
+		<tr>
+	</table>
+	
+	</center>
+
+</form>

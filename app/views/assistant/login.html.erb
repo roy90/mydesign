@@ -1,0 +1,19 @@
+
+
+<%= form_tag("", :method => "post") do %>
+<center>
+	<table>
+		
+		<tr><td colspan="2">You are about to login as Assistant</td></tr>
+			<th align="left">Email</th>
+			<td><%= text_field_tag(:assemail) %></td>
+		</tr>
+		<tr>
+			<th align="left">Password</th>
+			<td><%= password_field_tag(:asspass)%>
+		</tr>
+	</table>
+	
+	<%= submit_tag("Submit")%>
+	<a href="/role"><input type="button" value="Back"></a> </center>
+<% end %>

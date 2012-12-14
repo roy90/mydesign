@@ -1,0 +1,19 @@
+
+
+<%= form_tag("", :method => "post") do %>
+<center>
+	<table>
+		<tr><td colspan="2">You are about to login as Admin / Designer.</td></tr>
+		<tr>
+			<th align="left">Email</th>
+			<td><%= text_field_tag(:ademail) %></td>
+		</tr>
+		<tr>
+			<th align="left">Password</th>
+			<td><%= password_field_tag(:adpass)%>
+		</tr>
+	</table>
+	
+	<%= submit_tag("SUBMIT")%>
+	<a href="/home"><input type="button" value="CANCEL"></a> </center>
+<% end %>

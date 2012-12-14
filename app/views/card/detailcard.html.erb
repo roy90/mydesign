@@ -1,0 +1,80 @@
+<h1>Business Card Details</h1>
+
+<% @show.each do |sh|%>
+
+	<table>
+	<tr>
+			<th align="left">Name</th>
+			<td><%= sh.cusname4 %></td>
+		</tr>
+		<tr>
+			<th align="left">Nokp</th>
+			<td><%= sh.nokp4 %></td>
+		</tr>
+	
+			<tr>
+			<th align="left">Company Name</th>
+			<td><%= sh.company_name4%></td>
+		</tr>
+			<tr>
+			<th align="left">Email</th>
+			<td><%= sh.cusemail4 %></td>
+		</tr>
+			<tr>
+			<th align="left">Address</th>
+			<td><%= sh.cusadd4 %></td>
+		</tr>
+			<tr>
+			<th align="left">Postcode</th>
+			<td><%= sh.cuspostcode4 %></td>
+		</tr>
+			<tr>
+			<th align="left">City</th>
+			<td><%= sh.cuscity4 %></td>
+		</tr>
+			<tr>
+			<th align="left">State</th>
+			<td><%= sh.cusstate4 %></td>
+		</tr>
+			<tr>
+			<th align="left">Phone</th>
+			<td><%= sh.cusphone4 %></td>
+		</tr>
+			<tr>
+			<th align="left">Date</th>
+			<td><%= sh.cusdate4 %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Banner Size</th>
+			<td><%= sh.cardsize %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Quantity</th>
+			<td><%= sh.cardquantity %></td>
+		</tr>
+			<tr>
+			<th align="left">Uploaded File</th>
+			<td>
+		
+			<% if sh.upload != " " %>
+					<a href=<%= "../../" + sh.upload %> target="_blank">View</a>
+			<% else %>
+				Not Uploaded
+			<% end %>
+	  
+		</td></tr>
+		
+			
+	</table>
+	
+	</form>
+	<center>
+	<a href="/confirmationcard/<%= sh.nokp4 %>"><input type="submit" name="approve" value="UPDATE STATUS"></a>
+			<a href="/listcard"><input type="button" name="back" value="BACK"></a>
+			</center>
+
+<% end %>

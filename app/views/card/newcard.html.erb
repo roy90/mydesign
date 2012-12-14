@@ -1,0 +1,142 @@
+<h1>STEP 2 : Business Card</h1>
+
+<%= @msg%>
+
+
+
+<form method="POST"  enctype="multipart/form-data">
+
+<center>
+	
+	
+	
+<table>
+		<tr>
+			<th>NO.</th>
+			<th>CARD TYPE</th>
+			<th>PRICE PER 100pcs</th>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td>Glossy Card</td>
+			<td align="center">RM45.00</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>Matte Card</td>
+			<td align="center">RM36.50</td>
+		</tr>
+		<tr>
+			<td align="center">3</td>
+			<td>Textured Card</td>
+			<td align="center">RM40.20</td>
+		</tr>
+		<tr>
+			<td align="center">4</td>
+			<td>Regular Card</td>
+			<td align="center">RM32.00</td>
+		</tr>
+	</table>
+	
+	<hr>
+
+	<table>
+		
+		<tr>
+			<td>Name</td><td><input type=text name="cusname4"></td>
+		</tr>
+		<tr>
+			<td>IC Number</td><td><input type=text name="nokp4" placeholder="e.g : 910236-01-5476"></td>
+		</tr>
+		<tr>
+			<td>Company Name</td><td><input type=text name="company_name4" placeholder="if have"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input type=text name="cusemail4"></td>
+		</tr>
+	   <tr>
+			<td>Address</td><td><input type=text name="cusadd4"></td>
+		</tr>
+		
+		<tr>
+			<td>Poscode</td><td><input type=text name="cuspostcode4"></td>
+		</tr>
+		
+		
+		<tr>
+			<td>State</td><td>
+			<select type=text name="cusstate4">
+			<option>Kedah</option>
+			<option>Perlis</option>
+			<option>Pulau Pinang</option>
+			<option>Perak</option>
+			<option>Kelantan</option>
+			<option>Terengganu</option>
+			<option>Selangor</option>
+			<option>Kuala Lumpur</option>
+			<option>Pahang</option>
+			<option>Negeri Sembilan</option>
+			<option>Melaka</option>
+			<option>Johor</option>
+			<option>Sabah</option>
+			<option>Sarawak</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>City</td><td><input type=text name="cuscity4"></td>
+		</tr>
+			<tr>
+			<td>Phone No.</td><td><input type=text name="cusphone4"></td>
+		</tr>
+		<tr>
+			<td>Order Date</td><td><input type=text name="cusdate4" placeholder="e.g : 02/06/2012"></td>
+		</tr>
+		<tr>
+			<td>Type</td><td>
+			<select type=text name="cardtype">
+			<option>Glossy</option>
+			<option>Matte</option>
+			<option>Textured</option>
+			<option>Regular</option>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Size</td><td>
+			<select type=text name="cardsize">
+			<option>-</option>
+			<option>'4.9 X 5.3' px</option>
+			<option>'4.9 X 2.5' px</option>
+			</td>
+		</tr>
+		<tr>
+			<td>Side</td><td>
+			<select type=text name="cardside">
+			<option>1 Side</option>
+			<option>2 Sides</option>
+			
+			</td>
+		</tr>
+		<tr>
+			<td>Quantity</td>
+			<td><select type=text name="cardquantity">
+			<option>100 pcs</option>
+			<option>200 pcs</option>
+			<option>300 pcs</option>
+			<option>400 pcs</option>
+			<option>500 pcs</option></td>
+		</tr>
+		<tr>
+			<td>Upload File</td><td>    
+    <input accept="" type="file" name="upload"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="SUBMIT"  onClick="return confirm ('Make sure your information is correct and click OK if confirm to submit.')">
+			<a href="/neworder"><input type="button" value="BACK"></a></td>
+		<tr>
+	</table>
+	
+	</center>
+
+</form>

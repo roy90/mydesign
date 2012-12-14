@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<meta name="Description" content="Information architecture, Web Design, Web Standards." />
+<meta name="Keywords" content="your, keywords" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="Erwin Aligam - ealigam@gmail.com" />
+<meta name="Robots" content="index,follow" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="CoolWater.css" />
+<link rel="icon" type="images/png" href="images/badge.png">
+
+  <%= stylesheet_link_tag    "CoolWater" %>
+  <%= javascript_include_tag "CoolWater" %>
+  <%= csrf_meta_tags %>
+
+<title>1 Malaysian Design</title>
+	
+</head>
+
+<body>
+<!-- wrap starts here -->
+<div id="wrap">
+		
+	<!--header -->
+	<div id="header">			
+				
+		<h1 id="logo-text"><a href="/home">1MalaysianDesign</a></h1>		
+		<p id="slogan">Customer Is Our Priority</p>		
+			
+		<div id="header-links">
+			<p>
+			<a href="/home">Home</a> | 
+			<a href="index.html">Contact</a> | 
+			<a href="/role">Ntah</a>			
+			</p>		
+		</div>		
+						
+	</div>
+		
+	<!-- navigation -->	
+	<div  id="menu">
+		        <ul>
+                                
+								
+				<%if session[:admin_ademail].nil?%>
+				 	
+				<li><a href="/home">HOME</a></li>
+				<li><a href="/services">SERVICES</a></li>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="/neworder">ORDER</a></li>
+				<li><a href="/login">LOGIN</a></li>
+				<!-- <li><a href="/role">LOGIN</a></li>  -->
+				  
+				  
+				  
+				  
+				  
+				  
+				<% else %>
+				 
+				 
+				<!-- Kalau dah LOGIN-->
+				
+				
+				<li><a href="/home">HOME</a></li>
+				<!-- <li><a href="/services">SERVICES</a></li>    -->
+				<li><a href="/checkorder">CHECK ORDER</a></li>
+				<li><a href="/approved">APPROVED ORDER</a></li>
+				<li><a href="/reply">REPLY ORDER</a></li>
+				<li><a href="/logout">LOGOUT : <%=session[:admin_adname]%></a></li>
+				  
+				<% end %>
+				
+				
+				
+				
+                            </ul>
+	</div>					
+			
+	<!-- content-wrap starts here -->
+	<div id="content-wrap">
+		
+		<div id="main">				
+				
+			<div id="text">
+						
+						<%= yield %>
+						
+                       		         
+                        </div>
+				
+			
+								
+				
+				
+			<br />	
+
+		</div>
+		
+			
+		<div id="sidebar">
+			
+			<h2>Search Box</h2>	
+			<form action="#" class="searchform">
+				<p>
+				<input name="search_query" class="textbox" type="text" />
+				<input name="search" class="button" value="Search" type="submit" />
+				</p>			
+			</form>	
+			
+			<h2>OUR DESIGNERS</h2>
+				
+			<b><u>Designer 1 : </u></b>
+			</br>
+			<table>
+			<tr>
+			<td><img src="assets/maha.PNG" width="45" height="45" ></td>
+			<td><a href="/designer/1">MAHAZHIR BIN ZAINOL ABIDIN</a></td>
+			</tr>
+			</table>
+			
+			<b><u>Designer 2 : </u></b>
+			</br>
+			<table>
+			<tr>
+			<td><img src="assets/royy.PNG" width="45" height="45"></td>
+			<td><a href="/designer/2">MOHD ROZAIMY BIN ABD MUTTALIF</a></td>
+			</tr>
+			</table>
+			
+					
+			<h2>OTHER SERVICES</h2>
+			<ul class="sidemenu">				
+				<li><a href="#">Vector Design</a></li>
+				<li><a href="#">Stationaries</a></li>
+				<li><a href="#">Wedding Card Design</a></li>
+			</ul>
+			
+			<h2>WE ON FACEBOOK</h2>
+			<ul class="sidemenu">				
+				<li><a href="#">1MALAYSIAN DESIGN Official</a></li>
+				<li><a href="http://www.facebook.com/benpanglimanasyeed?ref=tn_tnmn" target="_blank">MAHA DESIGNER</a></li>
+				<li><a href="#">ROY DESIGNER</a></li>
+			</ul>
+			
+								
+		</div>
+				
+	<!-- content-wrap ends here -->	
+	</div>
+					
+	<!--footer starts here-->
+	<div id="footer">
+			
+		<p>
+		&copy; 2012 <strong>Maha & Roy	</strong> | 1 Malaysian Design |
+		Web Tech : ITT544 | RoR</a>   		
+   	</p>
+				
+	</div>	
+
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  possize: 1.5
+  posquantity: 1
+
+two:
+  possize: 1.5
+  posquantity: 1

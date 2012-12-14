@@ -1,0 +1,122 @@
+<h1>STEP 2 : Poster</h1>
+
+<%= @msg%>
+
+
+
+<form method="POST" enctype="multipart/form-data">
+
+<center>
+	
+	
+	
+<table>
+		<tr>
+			<th>NO.</th>
+			<th>POSTER SIZE</th>
+			<th align="center">PRICE PER SHEET</th>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td>A4</td>
+			<td align="center">RM20.00</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>A3</td>
+			<td align="center">RM25.00</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>A5</td>
+			<td align="center">RM15.00</td>
+		</tr><tr>
+			<td align="center">2</td>
+			<td>B4</td>
+			<td align="center">RM17.00</td>
+		</tr><tr>
+			<td align="center">2</td>
+			<td>B5</td>
+			<td align="center">RM15.00</td>
+		</tr>
+	</table>
+	
+	<hr>
+
+	<table>
+		
+		<tr>
+			<td>Name</td><td><input type=text name="cusname3"></td>
+		</tr>
+		<tr>
+			<td>IC Number</td><td><input type=text name="nokp3" placeholder="e.g : 910236-01-5476"></td>
+		</tr>
+		<tr>
+			<td>Company Name</td><td><input type=text name="company_name3" placeholder="if have"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input type=text name="cusemail3"></td>
+		</tr>
+	   <tr>
+			<td>Address</td><td><input type=text name="cusadd3"></td>
+		</tr>
+		
+		<tr>
+			<td>Poscode</td><td><input type=text name="cuspostcode3"></td>
+		</tr>
+		
+		
+		<tr>
+			<td>State</td><td>
+			<select type=text name="cusstate3">
+			<option>Kedah</option>
+			<option>Perlis</option>
+			<option>Pulau Pinang</option>
+			<option>Perak</option>
+			<option>Kelantan</option>
+			<option>Terengganu</option>
+			<option>Selangor</option>
+			<option>Kuala Lumpur</option>
+			<option>Pahang</option>
+			<option>Negeri Sembilan</option>
+			<option>Melaka</option>
+			<option>Johor</option>
+			<option>Sabah</option>
+			<option>Sarawak</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>City</td><td><input type=text name="cuscity3"></td>
+		</tr>
+			<tr>
+			<td>Phone No.</td><td><input type=text name="cusphone3"></td>
+		</tr>
+		<tr>
+			<td>Order Date</td><td><input type=text name="cusdate3" placeholder="e.g : 02/06/2012"></td>
+		</tr>
+		
+		<tr>
+			<td>Size</td><td>
+			<select type=text name="possize">
+			<option>-</option>
+			<option>A5</option>
+			<option>A4</option>
+			<option>A3</option>
+			<option>B4</option>
+			<option>B5</option></td>
+		</tr>
+		<tr>
+			<td>Quantity</td><td><input type=text name="posquantity"></td>
+		</tr>
+		<tr>
+			<td>Upload File</td><td>    
+    <input accept="" type="file" name="upload"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="SUBMIT"  onClick="return confirm ('Make sure your information is correct and click OK if confirm to submit.')">
+			<a href="/neworder"><input type="button" value="BACK"></a></td>
+		<tr>
+	</table>
+
+</form>

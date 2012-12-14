@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ad_id: 1
+  cus_id: 1
+  ban_id: 1
+  bun_id: 1
+  bus_id: 1
+  pos_id: 1
+
+two:
+  ad_id: 1
+  cus_id: 1
+  ban_id: 1
+  bun_id: 1
+  bus_id: 1
+  pos_id: 1

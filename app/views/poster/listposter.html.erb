@@ -1,0 +1,43 @@
+<h1>Poster Order Lists</h1>
+<br>
+	<table border="1">
+		<tr>
+		
+			
+			<th>Name</th>
+			<th>IC Number</th>
+			<th>Email</th>
+			<th>Company Name</th>
+		
+			
+		</tr>
+		<% bil = 0%>
+		<% @poster.each do |ho| %>
+			
+			<tr>
+				
+		
+				<td><a href="/detailposter/<%= ho.id%>"><%=ho.cusname3%></a></td>
+				<td><%=ho.nokp3%></td>
+				<td><%=ho.cusemail3%></td>
+				<td><%=ho.company_name3%></td>
+				
+				
+			</tr>
+			
+			
+			
+			
+		
+		
+		<% end %>
+		
+		<tr>
+			<td colspan="6" align="left">
+			<a href="/checkorder"><input type="button" name="back" value="BACK"></a></center>
+			</td>
+			</tr>
+			
+	</table>
+	<center>
+	

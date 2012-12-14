@@ -1,0 +1,114 @@
+<h1>STEP 2 : Banner</h1>
+
+<%= @msg%>
+<form method="POST" enctype="multipart/form-data">
+
+<center>
+	
+	
+	
+<table>
+		<tr>
+			<th>NO.</th>
+			<th>BANNER SIZE</th>
+			<th>BANNER PRICE PER FEET</th>
+		</tr>
+		<tr>
+			<td align="center">1</td>
+			<td>More than 100 feets ( > 100f )</td>
+			<td align="center">RM2.00</td>
+		</tr>
+		<tr>
+			<td align="center">2</td>
+			<td>Less than 100 feets ( < 100f )</td>
+			<td align="center">RM2.80</td>
+		</tr>
+	</table>
+	
+	<hr>
+
+	<table>
+		
+		<tr>
+			<td>Name</td><td><input type=text name="cusname1"></td>
+		</tr>
+		<tr>
+			<td>IC Number</td><td><input type=text name="nokp1" placeholder="e.g : 910236-01-5476"></td>
+		</tr>
+		<tr>
+			<td>Company Name</td><td><input type=text name="company_name1" placeholder="if have"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input type=text name="cusemail1"></td>
+		</tr>
+	   <tr>
+			<td>Address</td><td><input type=text name="cusadd1"></td>
+		</tr>
+		
+		<tr>
+			<td>Poscode</td><td><input type=text name="cuspostcode1"></td>
+		</tr>
+		
+		
+		<tr>
+			<td>State</td><td>
+			<select type=text name="cusstate1">
+			<option>Kedah</option>
+			<option>Perlis</option>
+			<option>Pulau Pinang</option>
+			<option>Perak</option>
+			<option>Kelantan</option>
+			<option>Terengganu</option>
+			<option>Selangor</option>
+			<option>Kuala Lumpur</option>
+			<option>Pahang</option>
+			<option>Negeri Sembilan</option>
+			<option>Melaka</option>
+			<option>Johor</option>
+			<option>Sabah</option>
+			<option>Sarawak</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>City</td><td><input type=text name="cuscity1"></td>
+		</tr>
+			<tr>
+			<td>Phone No.</td><td><input type=text name="cusphone1"></td>
+		</tr>
+		<tr>
+			<td>Order Date</td><td><input type=text name="cusdate1" placeholder="e.g : 02/06/2012"></td>
+		</tr>
+		
+		<tr>
+			<td>Size</td><td>
+			<select type=text name="bansize">
+			<option>-</option>
+			<option>'10 X 4'</option>
+			<option>'15 X 4'</option>
+			<option>'20 X 6'</option>
+			<option>'12 X 4'</option>
+			<input type=text name="other" placeholder="If other"></td>
+			</td>
+		</tr>
+		<tr>
+			<td>Quantity</td><td><input type=text name="banquantity"></td>
+		</tr>
+		<tr>
+			<td>Upload File</td><td>    
+    <input accept="" type="file" name="upload"></td>
+		</tr>
+		
+		
+		
+		
+	
+		<tr>
+			<td colspan="2" align="center"><input type="submit" value="SUBMIT"  onClick="return confirm ('Make sure your information is correct and click OK if confirm to submit.')">
+			<a href="/neworder"><input type="button" value="BACK"></a></td>
+		<tr>
+	</table>
+	</center>
+
+</form>
+

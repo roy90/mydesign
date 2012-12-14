@@ -1,0 +1,79 @@
+<h1>Order Confirmation</h1>
+
+<% @show.each do |sh|%>
+
+
+	<table>
+	<tr>
+			<th align="left">Name</th>
+			<td><%= sh.cusname1 %></td>
+		</tr>
+		<tr>
+			<th align="left">Nokp</th>
+			<td><%= sh.nokp1 %></td>
+		</tr>
+	
+			<tr>
+			<th align="left">Company Name</th>
+			<td><%= sh.company_name1%></td>
+		</tr>
+			<tr>
+			<th align="left">Email</th>
+			<td><%= sh.cusemail1 %></td>
+		</tr>
+			<tr>
+			<th align="left">Address</th>
+			<td><%= sh.cusadd1 %></td>
+		</tr>
+			<tr>
+			<th align="left">Postcode</th>
+			<td><%= sh.cuspostcode1 %></td>
+		</tr>
+			<tr>
+			<th align="left">City</th>
+			<td><%= sh.cuscity1 %></td>
+		</tr>
+			<tr>
+			<th align="left">State</th>
+			<td><%= sh.cusstate1 %></td>
+		</tr>
+			<tr>
+			<th align="left">Phone</th>
+			<td><%= sh.cusphone1 %></td>
+		</tr>
+			<tr>
+			<th align="left">Date</th>
+			<td><%= sh.cusdate1 %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Banner Size</th>
+			<td><%= sh.bansize %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Other Size(if have)</th>
+			<td><%= sh.other %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Quantity</th>
+			<td><%= sh.banquantity %></td>
+		</tr>
+			<tr>
+			<th align="left">Details</th>
+			<td><%= sh.details %></td>
+			
+			<tr>
+			<td colspan="2" align="center">
+			<input type="submit" name="approve" value="CONFIRM">
+			<input type="submit" name="reject" value="EDIT">
+			<a href="/listbanner"><input type="button" name="back" value="CANCEL"></a></td>
+			</tr>
+		
+	</table>
+
+<% end %>

@@ -1,0 +1,33 @@
+<h1>Cari Pelanggan</h1>
+
+search no kp is : <%= @searchnokp%>
+
+<%= form_tag("", :method => "post") do %>
+	<table>
+		<tr>
+			<th align="left">Masukkan NOKP</th>
+			<td><%= text_field_tag(:id) %></td>
+		   <td><%= submit_tag("Cari")%></td>
+		
+		</tr>
+	</table>
+	<% end %>
+<br />
+<br />
+<table border="1">
+		<tr>
+			<th>Bil</th>
+			<th>No Kp</th>
+			
+		</tr>
+		<% bil = 0%>
+		<% @find.each do |fi| %>
+			
+			<tr>
+				<td><%=bil+=1%></td>
+				<td><%=fi.nokp%></td>
+				
+			</tr>
+		
+		<% end %>
+</table>

@@ -1,0 +1,43 @@
+<h1>Bunting Order Lists</h1>
+<br>
+	<table border="1">
+		<tr>
+		
+			
+			<th>Name</th>
+			<th>IC Number</th>
+			<th>Email</th>
+			<th>Company Name</th>
+		
+			
+		</tr>
+		<% bil = 0%>
+		<% @bunting.each do |ho| %>
+			
+			<tr>
+				
+		
+				<td><a href="/detailbunting/<%= ho.id%>"><%=ho.cusname2%></a></td>
+				<td><%=ho.nokp2%></td>
+				<td><%=ho.cusemail2%></td>
+				<td><%=ho.company_name2%></td>
+				
+				
+			</tr>
+			
+			
+			
+			
+		
+		
+		<% end %>
+		
+		<tr>
+			<td colspan="6" align="left">
+			<a href="/checkorder"><input type="button" name="back" value="BACK"></a></center>
+			</td>
+			</tr>
+			
+	</table>
+	<center>
+	

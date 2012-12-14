@@ -1,0 +1,79 @@
+<h1>Poster Details</h1>
+
+<% @show.each do |sh|%>
+<fieldset>
+<legend>Perinciannya</legend>
+	<table>
+	<tr>
+			<th align="left">Name</th>
+			<td><%= sh.cusname3 %></td>
+		</tr>
+		<tr>
+			<th align="left">Nokp</th>
+			<td><%= sh.nokp3 %></td>
+		</tr>
+	
+			<tr>
+			<th align="left">Company Name</th>
+			<td><%= sh.company_name3%></td>
+		</tr>
+			<tr>
+			<th align="left">Email</th>
+			<td><%= sh.cusemail3 %></td>
+		</tr>
+			<tr>
+			<th align="left">Address</th>
+			<td><%= sh.cusadd3 %></td>
+		</tr>
+			<tr>
+			<th align="left">Postcode</th>
+			<td><%= sh.cuspostcode3 %></td>
+		</tr>
+			<tr>
+			<th align="left">City</th>
+			<td><%= sh.cuscity3 %></td>
+		</tr>
+			<tr>
+			<th align="left">State</th>
+			<td><%= sh.cusstate3 %></td>
+		</tr>
+			<tr>
+			<th align="left">Phone</th>
+			<td><%= sh.cusphone3 %></td>
+		</tr>
+			<tr>
+			<th align="left">Date</th>
+			<td><%= sh.cusdate3 %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Banner Size</th>
+			<td><%= sh.possize %></td>
+		</tr>
+		
+		</tr>
+			<tr>
+			<th align="left">Quantity</th>
+			<td><%= sh.posquantity %></td>
+		</tr>
+			<tr>
+			<th align="left">Uploaded File</th>
+			<td>
+		
+			<% if sh.upload != " " %>
+					<a href=<%= "../../" + sh.upload %> target="_blank">View</a>
+			<% else %>
+				Not Uploaded
+			<% end %>
+	  
+		</td></tr>
+		</table>
+	
+	</form>
+	<center>
+	<a href="/confirmationposter/<%= sh.nokp3 %>"><input type="submit" name="approve" value="UPDATE STATUS"></a>
+			<a href="/listposter"><input type="button" name="back" value="BACK"></a>
+			</center>
+
+<% end %>

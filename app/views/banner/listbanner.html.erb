@@ -1,0 +1,43 @@
+<h1>Banner Order Lists</h1>
+<br>
+	<table border="1">
+		<tr>
+		
+			
+			<th>Name</th>
+			<th>IC Number</th>
+			<th>Email</th>
+			<th>Company Name</th>
+		
+			
+		</tr>
+		<% bil = 0%>
+		<% @banner.each do |ho| %>
+			
+			<tr>
+				
+		
+				<td><a href="/detail_banner/<%= ho.id%>"><%=ho.cusname1%></a></td>
+				<td><%=ho.nokp1%></td>
+				<td><%=ho.cusemail1%></td>
+				<td><%=ho.company_name1%></td>
+				
+				
+			</tr>
+			
+			
+			
+			
+		
+		
+		<% end %>
+		
+		<tr>
+			<td colspan="6" align="left">
+			<a href="/checkorder"><input type="button" name="back" value="BACK"></a></center>
+			</td>
+			</tr>
+			
+	</table>
+	<center>
+	

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cardsize: 1.5
+  cardquantity: 1
+
+two:
+  cardsize: 1.5
+  cardquantity: 1
